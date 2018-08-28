@@ -1,0 +1,12 @@
+[package]
+name = "android"
+version = "0.1.0"
+authors = ["Victor Koenders <victor.koenders@gmail.com>"]
+
+[lib]
+crate-type = ["dylib"]
+
+[dependencies]
+
+[target.'cfg(target_os="android")'.dependencies]
+jni = { version = "0.10.1", default-features = false }
